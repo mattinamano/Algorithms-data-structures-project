@@ -6,14 +6,6 @@ class IntersectionBetweenThreeArrays
     int[] theIntersectArray(int[] arr1,int[] arr2,int[] arr3)
     {
         int numberofIntersection=0,count=0;
-        HashMap<Integer,Boolean> hm1=new HashMap<Integer,Boolean>();
-        for(int i=0;i<arr1.length;i++)
-        {
-            if(hm1.containsKey(arr1[i])==false)
-            {
-                hm1.put(arr1[i],true);
-            }
-        }
         HashMap<Integer,Boolean> hm2=new HashMap<Integer,Boolean>();
         for(int i=0;i<arr2.length;i++)
         {
